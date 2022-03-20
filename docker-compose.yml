@@ -1,0 +1,9 @@
+version: '3'
+services:
+  terraform:
+    container_name: 'terraform-containar'
+    build: .
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    entrypoint: ash
+    tty: true
