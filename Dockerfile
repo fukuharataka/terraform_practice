@@ -1,4 +1,5 @@
-FROM hashicorp/terraform:latest
+# 2022/03/21 latest
+FROM hashicorp/terraform:1.1.7
 
 # install Docker CLI
 RUN apk update && \
